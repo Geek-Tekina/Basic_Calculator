@@ -15,25 +15,27 @@ cancelBtn.addEventListener("click", () => {
 //to evalute
 const eqlBtn = document.querySelector("#eql");
 eqlBtn.addEventListener("click", function () {
-    const expression = input.value;
-    // console.log(expression);
-    const num1 = +expression[0];
-    const num2 = +expression[2];
-    // console.log(typeof num1,num2);
-    const operation = expression[1];
+      const expression = input.value;
+      for(let it of expression){
+        if(it=='+' || it=='-' || it=='*' || it=='/'){
+        var seperator=it;}
+      }
+    const[num1,num2]=expression.split(seperator);
+    // console.log(num1,num2);
+    let operation;
     let ans;
-    switch (operation) {
-        case '+': ans = num1 + num2;
+    switch (seperator) {
+        case '+': ans = +num1 + +num2;
             break;
-        case '*': ans = num1 * num2;
+        case '*': ans = +num1 * +num2;
             break;
-        case '-': ans = num1 - num2;
+        case '-': ans = +num1 - +num2;
             break;
-        case '/': ans = num1 / num2;
+        case '/': ans = +num1 / +num2;
             break;
     }
     input.value=''+ans;
-    
+
 
 
 })
