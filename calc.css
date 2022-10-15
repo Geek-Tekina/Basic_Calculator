@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.container{
+    height: 500px;
+    width:300px;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 8px;
+    box-shadow: 7px 7px rgb(90, 89, 89);
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+#screen{
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size:2.5rem;
+    
+    
+}
+.buttons{
+    height: 350px;
+    width: 100%;
+    /* display: flexbox; */
+    padding: 4px;
+    /* justify-content: space-between;
+    align-items: center; */
+    background-color: rgb(251, 253, 253);
+}
+.yellow-btn{
+    height: 50px;
+    width:60px;
+    font-size:1.5rem;
+    background-color: yellow;
+    padding: 4px;
+    margin: 4px;
+    cursor:grab;
+}
+.green-btn{
+    height: 50px;
+    width:60px;
+    font-size:1.5rem;
+    background-color: rgb(98, 255, 0);
+    padding: 4px;
+    margin: 4px;
+    cursor:grab;
+    
+}
+.pink-btn{
+    height: 50px;
+    width:60px;
+    font-size:1.5rem;
+    background-color: rgb(250, 147, 207);
+    padding: 4px;
+    margin: 4px;
+    cursor:grab;
+    
+}
+.c{
+    height: 50px;
+    width:130px;
+    font-size:1.5rem;
+    background-color: rgb(250, 78, 65);
+    padding: 4px;
+    margin: 4px;
+    cursor:grab;
+    
+}
